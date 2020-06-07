@@ -21,7 +21,7 @@ end
 %loading features of the person
 x=load('entryfeatures.txt');
 g=x*theta;
- h=1./(1+exp(g));
+ h=1./(1+exp(-g));
  %printing percentage probability of being infected
  disp(h*100);
 
